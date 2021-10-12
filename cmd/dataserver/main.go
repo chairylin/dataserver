@@ -13,7 +13,7 @@ import (
 
 func main() {
 	cfg := config.Server{}
-	err := cleanenv.ReadConfig("config-yml", &cfg)
+	err := cleanenv.ReadConfig("config.yml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
